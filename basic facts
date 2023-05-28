@@ -1,6 +1,18 @@
------------------------> FACTS <---------------
+---------------------------------------------------------> FACTS <--------------------------------------------------------------------------
 
 i)   the 2 is only the even prime number
 ii)  the 2 and 3 are the only consecutive number
 iii) the every number can be in form of 6b+1 or 6b-1 except 2 and 3
-iv)  
+iv)  (p-1)!%p = (p-1)%p
+v)   every even number greater than 2 can be expressed in sum of two prime number
+
+------------------------------------------------------>O(N) prime checking <---------------------------------------------------------------
+int n;
+int cnt=0;
+for(int i=1;i<=n;i++){ 
+  if(n%i==0) cnt++;
+ }
+ if(cnt==2) cout<<prime<<endl;
+ else cout<<"Non prime"<<endl;
+ 
+ ----------------------------------------------------------> O(sqrtN) <-------------------------------------------------------------------
